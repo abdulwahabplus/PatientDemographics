@@ -6,11 +6,16 @@
 
     //angularjs controller method  
     function patientController($scope, $http) {
+        
 
         $scope.patients = [];
-        $scope.newpatient = {};
-        $scope.PhoneNumbers = [{ Type: 'Home', Number: '' }, { Type: 'Work', Number: '' }, { Type: 'Mobile', Number: '' }];
-        $scope.newpatient.Gender = "Male";
+        resetInputs();
+
+        function resetInputs() {
+            $scope.newpatient = {};
+            $scope.newpatient.Gender = "Male";
+            $scope.PhoneNumbers = [{ Type: 'Home', Number: '' }, { Type: 'Work', Number: '' }, { Type: 'Mobile', Number: '' }];
+        }
                 
         //declare variable for mainain ajax load and entry or edit mode  
         $scope.loading = true;
@@ -32,14 +37,12 @@
 
         });
 
-        //by pressing toggleEdit button ng-click in html, this method will be hit  
-        $scope.toggleEdit = function () {
-            this.patient.editMode = !this.patient.editMode;
-        };
-
         //by pressing toggleAdd button ng-click in html, this method will be hit  
-        $scope.toggleAdd = function () {
+        $scope.toggleAdd = function (form) {
             $scope.addMode = !$scope.addMode;
+            resetInputs();
+            form.$setPristine();
+            form.$setUntouched();
         };
 
         //Insert patient  
@@ -48,6 +51,7 @@
             var patientData = $scope.newpatient;
             patientData.Phone = $scope.PhoneNumbers;
             $scope.loading = true;
+            $scope.error = "";
             $http({
                 method: 'POST',
                 url: PATIENT_API_URL + '/api/patient/',
@@ -57,6 +61,9 @@
                 alert("Added Successfully!!");
                 $scope.addMode = false;
                 if (response.data) {
+                    if (!Array.isArray($scope.patients)) {
+                        $scope.patients = [];
+                    }
                     $scope.patients.push(response.data);
                 }
                 $scope.loading = false;
