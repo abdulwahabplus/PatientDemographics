@@ -17,3 +17,12 @@ F:\Abdul\Connect\PatientDemographicsAPI\ORM\bin\Debug\EntityFramework.xml
 F:\Abdul\Connect\PatientDemographicsAPI\ORM\bin\Debug\EntityFramework.SqlServer.xml
 F:\Abdul\Connect\PatientDemographicsAPI\ORM\obj\Debug\ORM.dll
 F:\Abdul\Connect\PatientDemographicsAPI\ORM\obj\Debug\ORM.pdb
+F:\Abdul\Connect\Git\PatientDemographics\PatientDemographicsAPI\ORM\bin\Debug\ORM.dll.config
+F:\Abdul\Connect\Git\PatientDemographics\PatientDemographicsAPI\ORM\bin\Debug\ORM.dll
+F:\Abdul\Connect\Git\PatientDemographics\PatientDemographicsAPI\ORM\bin\Debug\ORM.pdb
+F:\Abdul\Connect\Git\PatientDemographics\PatientDemographicsAPI\ORM\bin\Debug\EntityFramework.dll
+F:\Abdul\Connect\Git\PatientDemographics\PatientDemographicsAPI\ORM\bin\Debug\EntityFramework.SqlServer.dll
+F:\Abdul\Connect\Git\PatientDemographics\PatientDemographicsAPI\ORM\bin\Debug\EntityFramework.xml
+F:\Abdul\Connect\Git\PatientDemographics\PatientDemographicsAPI\ORM\bin\Debug\EntityFramework.SqlServer.xml
+F:\Abdul\Connect\Git\PatientDemographics\PatientDemographicsAPI\ORM\obj\Debug\ORM.dll
+F:\Abdul\Connect\Git\PatientDemographics\PatientDemographicsAPI\ORM\obj\Debug\ORM.pdb

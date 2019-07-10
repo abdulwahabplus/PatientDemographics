@@ -7,3 +7,7 @@ F:\Abdul\Connect\PatientDemographicsAPI\Common\bin\Debug\Common.dll
 F:\Abdul\Connect\PatientDemographicsAPI\Common\bin\Debug\Common.pdb
 F:\Abdul\Connect\PatientDemographicsAPI\Common\obj\Debug\Common.dll
 F:\Abdul\Connect\PatientDemographicsAPI\Common\obj\Debug\Common.pdb
+F:\Abdul\Connect\Git\PatientDemographics\PatientDemographicsAPI\Common\bin\Debug\Common.dll
+F:\Abdul\Connect\Git\PatientDemographics\PatientDemographicsAPI\Common\bin\Debug\Common.pdb
+F:\Abdul\Connect\Git\PatientDemographics\PatientDemographicsAPI\Common\obj\Debug\Common.dll
+F:\Abdul\Connect\Git\PatientDemographics\PatientDemographicsAPI\Common\obj\Debug\Common.pdb

@@ -27,6 +27,6 @@ namespace PatientDemographics.Core.Model
     public class Phones
     {
         public string Type { get; set; }
-        public int? Number { get; set; }
+        public string Number { get; set; }
     }
 }

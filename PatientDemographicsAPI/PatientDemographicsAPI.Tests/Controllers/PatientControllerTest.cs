@@ -21,7 +21,7 @@ namespace PatientDemographicsAPI.Tests.Controllers
         {
             var newPhones = new List<Phones>() 
             { 
-                new Phones {Type = "Mobile", Number = 6456546}
+                new Phones {Type = "Mobile", Number = "6456546"}
             };
             PatientInfo newPatient = new PatientInfo {Forenames = "John", Surname = "Wick", Gender = "Male", DOB = DateTime.Now, Phone = newPhones };
 
