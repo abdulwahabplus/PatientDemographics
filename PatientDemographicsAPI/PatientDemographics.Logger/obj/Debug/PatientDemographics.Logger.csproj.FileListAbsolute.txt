@@ -1,0 +1,4 @@
+F:\Abdul\Connect\PatientDemographicsAPI\PatientDemographics.Logger\bin\Debug\PatientDemographics.Logger.dll
+F:\Abdul\Connect\PatientDemographicsAPI\PatientDemographics.Logger\bin\Debug\PatientDemographics.Logger.pdb
+F:\Abdul\Connect\PatientDemographicsAPI\PatientDemographics.Logger\obj\Debug\PatientDemographics.Logger.dll
+F:\Abdul\Connect\PatientDemographicsAPI\PatientDemographics.Logger\obj\Debug\PatientDemographics.Logger.pdb

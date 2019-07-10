@@ -1,0 +1,168 @@
+﻿<br />
+<style>
+    #mydiv {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1000;
+        background-color: grey;
+        opacity: .8;
+    }
+
+    .ajax-loader {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -32px; /* -1 * image width / 2 */
+        margin-top: -32px; /* -1 * image height / 2 */
+        display: block;
+    }
+
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+
+    .button {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+
+    .button4 {
+        border-radius: 9px;
+    }
+</style>
+<div data-ng-controller="patientController" class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <strong class="error">{{ error }}</strong>
+            <p data-ng-hide="addMode"><a data-ng-click="toggleAdd()" href="javascript:;" class="button button4">Register New Patient</a></p>
+            <form name="addPatient" data-ng-show="addMode" style="width:600px;margin:0px auto;">                
+                <div class="form-group">
+                    <label for="forenames" class="col-sm-2 control-label">Forenames:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="forenames" name="forenames" placeholder="please enter your forenames" data-ng-model="newpatient.Forenames" ng-minlength="3" ng-maxlength="50" required />
+                        <span style="color:red" class="help-inline" ng-show="addPatient.forenames.$touched && addPatient.forenames.$error.required">Required</span>
+                        <span style="color:red" class="help-inline" ng-show="addPatient.forenames.$touched && addPatient.forenames.$error.minlength">Should have at least 3 characters</span>
+                        <span style="color:red" class="help-inline" ng-show="addPatient.forenames.$touched && addPatient.forenames.$error.maxlength">Should have at most 50 characters</span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="surname" class="col-sm-2 control-label">Surname:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="surname" id="surname" placeholder="please enter your surname" data-ng-model="newpatient.Surname" ng-minlength="2" ng-maxlength="50" required />
+                        <span style="color:red" class="help-inline" ng-show="addPatient.surname.$touched && addPatient.surname.$error.required">Required</span>
+                        <span style="color:red" class="help-inline" ng-show="addPatient.surname.$touched && addPatient.surname.$error.minlength">Should have at least 2 characters</span>
+                        <span style="color:red" class="help-inline" ng-show="addPatient.surname.$touched && addPatient.surname.$error.maxlength">Should have at most 50 characters</span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="dob" class="col-sm-2 control-label">DOB:</label>
+                    <div class="col-sm-10">
+                        <input type="date" class="form-control" id="dob" placeholder="mm-dd-yyyy" data-ng-model="newpatient.DOB"/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="gender" class="col-sm-2 control-label">Gender:</label>
+                    <div class="col-sm-10">
+                        <select class="form-control" name="gender" id="gender" data-ng-model="newpatient.Gender" required>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Other">Other</option>
+                        </select>
+                        <span style="color:red" class="help-inline" ng-show="addPatient.gender.$touched && addPatient.gender.$error.required">Required</span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">Phone</label>
+                    <div class="col-sm-10">
+                        <label class="col-sm-2 control-label">&nbsp;</label>
+                    </div>
+                </div>
+
+                <div class="form-group" ng-repeat="phone in PhoneNumbers">
+                    <label class="col-sm-2 control-label" ng-bind="phone.Type"></label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" placeholder="please enter your number" ng-model="phone.Number"/>
+                    </div>
+                </div>
+                <br />
+
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <input type="submit" value="Submit" data-ng-click="submitted = true && add()" data-ng-disabled="!addPatient.$valid" class="button button4" />
+                        <input type="button" value="Cancel" data-ng-click="toggleAdd()" class="button button4" />
+                    </div>
+                </div>
+                <br />
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <br />
+            <br />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="table-responsive">
+                <table class="table table-bordered table-hover" style="width:800px">
+                    <tr>
+                        <td style="background-color: #dddddd1c; color: blue">Forenames</td>
+                        <th style="background-color: #dddddd1c; color: blue">Surname</th>
+                        <th style="background-color: #dddddd1c; color: blue">Date of Birth</th>
+                        <th style="background-color: #dddddd1c; color: blue">Gender</th>
+                        <th style="background-color: #dddddd1c; color: blue">Telephone numbers</th>
+                    </tr>
+                    <tr data-ng-repeat="patient in patients">
+                        <td>
+                            <p>{{ patient.Forenames }}</p>
+                        </td>
+                        <td>
+                            <p>{{ patient.Surname }}</p>
+                        </td>
+                        <td>
+                            <p>{{ patient.DOB }}</p>
+                        </td>
+                        <td>
+                            <p>{{ patient.Gender }}</p>
+                        </td>
+                        <td>
+                            <div ng-repeat-start="phone in patient.Phone">
+                                <span class="col-sm-2 control-label" style="padding: 0px" ng-bind="phone.Type"></span>
+                                <span class="col-sm-2 control-label" ng-bind="phone.Number"></span>
+                            </div>
+                            <br ng-repeat-end />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div id="mydiv" data-ng-show="loading">
+        <img src="Images/satyaloader.gif" class="ajax-loader" />
+    </div>
+</div>  

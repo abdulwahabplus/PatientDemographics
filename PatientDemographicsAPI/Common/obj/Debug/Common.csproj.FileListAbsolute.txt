@@ -1,0 +1,9 @@
+F:\Abdul\Samples\PatientDemographics\PatientDemographicsAPI\Common\bin\Debug\Common.dll
+F:\Abdul\Samples\PatientDemographics\PatientDemographicsAPI\Common\bin\Debug\Common.pdb
+F:\Abdul\Samples\PatientDemographics\PatientDemographicsAPI\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+F:\Abdul\Samples\PatientDemographics\PatientDemographicsAPI\Common\obj\Debug\Common.dll
+F:\Abdul\Samples\PatientDemographics\PatientDemographicsAPI\Common\obj\Debug\Common.pdb
+F:\Abdul\Connect\PatientDemographicsAPI\Common\bin\Debug\Common.dll
+F:\Abdul\Connect\PatientDemographicsAPI\Common\bin\Debug\Common.pdb
+F:\Abdul\Connect\PatientDemographicsAPI\Common\obj\Debug\Common.dll
+F:\Abdul\Connect\PatientDemographicsAPI\Common\obj\Debug\Common.pdb
