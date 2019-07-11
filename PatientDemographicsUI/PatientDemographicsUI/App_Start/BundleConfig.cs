@@ -32,7 +32,7 @@ namespace PatientDemographicsUI
                       "~/Scripts/angular.min.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/appjs").Include(
-                     "~/Scripts/app/customerCtrl.js"));  
+                     "~/Scripts/app/patientCtrl.js"));  
         }
     }
 }

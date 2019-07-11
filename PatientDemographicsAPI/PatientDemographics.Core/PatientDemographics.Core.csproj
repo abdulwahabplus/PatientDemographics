@@ -44,15 +44,16 @@
     <Compile Include="Models\PatientInfo.cs" />
     <Compile Include="PatientService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Common\XMLHelper.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Common\Common.csproj">
-      <Project>{0111a953-957b-45ae-932a-2cd080a17996}</Project>
-      <Name>Common</Name>
-    </ProjectReference>
     <ProjectReference Include="..\ORM\PatientDemographics.Models.csproj">
       <Project>{bf3c2d50-341e-49b2-ac46-9b4625d98e91}</Project>
       <Name>PatientDemographics.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PatientDemographics.Logger\PatientDemographics.Logger.csproj">
+      <Project>{962a76be-5311-4435-bd49-1c5d5b97c978}</Project>
+      <Name>PatientDemographics.Logger</Name>
     </ProjectReference>
     <ProjectReference Include="..\Repositories\PatientDemographics.Repositories.csproj">
       <Project>{efbe498a-a2e0-4602-8a1e-cc24849a8fbd}</Project>

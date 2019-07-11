@@ -74,7 +74,6 @@ F:\Abdul\Connect\Git\PatientDemographics\PatientDemographicsAPI\PatientDemograph
 F:\Abdul\Connect\Git\PatientDemographics\PatientDemographicsAPI\PatientDemographicsAPI.Tests\bin\Debug\System.Web.WebPages.Razor.dll
 F:\Abdul\Connect\Git\PatientDemographics\PatientDemographicsAPI\PatientDemographicsAPI.Tests\bin\Debug\Repositories.dll
 F:\Abdul\Connect\Git\PatientDemographics\PatientDemographicsAPI\PatientDemographicsAPI.Tests\bin\Debug\ORM.dll
-F:\Abdul\Connect\Git\PatientDemographics\PatientDemographicsAPI\PatientDemographicsAPI.Tests\bin\Debug\Common.dll
 F:\Abdul\Connect\Git\PatientDemographics\PatientDemographicsAPI\PatientDemographicsAPI.Tests\bin\Debug\Microsoft.Practices.Unity.dll
 F:\Abdul\Connect\Git\PatientDemographics\PatientDemographicsAPI\PatientDemographicsAPI.Tests\bin\Debug\System.Web.Http.Cors.dll
 F:\Abdul\Connect\Git\PatientDemographics\PatientDemographicsAPI\PatientDemographicsAPI.Tests\bin\Debug\EntityFramework.dll
@@ -96,8 +95,9 @@ F:\Abdul\Connect\Git\PatientDemographics\PatientDemographicsAPI\PatientDemograph
 F:\Abdul\Connect\Git\PatientDemographics\PatientDemographicsAPI\PatientDemographicsAPI.Tests\bin\Debug\System.Web.WebPages.Razor.xml
 F:\Abdul\Connect\Git\PatientDemographics\PatientDemographicsAPI\PatientDemographicsAPI.Tests\bin\Debug\Repositories.pdb
 F:\Abdul\Connect\Git\PatientDemographics\PatientDemographicsAPI\PatientDemographicsAPI.Tests\bin\Debug\ORM.pdb
-F:\Abdul\Connect\Git\PatientDemographics\PatientDemographicsAPI\PatientDemographicsAPI.Tests\bin\Debug\Common.pdb
 F:\Abdul\Connect\Git\PatientDemographics\PatientDemographicsAPI\PatientDemographicsAPI.Tests\bin\Debug\Microsoft.Practices.Unity.xml
 F:\Abdul\Connect\Git\PatientDemographics\PatientDemographicsAPI\PatientDemographicsAPI.Tests\bin\Debug\System.Web.Http.Cors.xml
 F:\Abdul\Connect\Git\PatientDemographics\PatientDemographicsAPI\PatientDemographicsAPI.Tests\bin\Debug\EntityFramework.xml
 F:\Abdul\Connect\Git\PatientDemographics\PatientDemographicsAPI\PatientDemographicsAPI.Tests\obj\Debug\PatientDemographicsAPI.Tests.pdb
+F:\Abdul\Connect\Git\PatientDemographics\PatientDemographicsAPI\PatientDemographicsAPI.Tests\bin\Debug\PatientDemographics.Logger.dll
+F:\Abdul\Connect\Git\PatientDemographics\PatientDemographicsAPI\PatientDemographicsAPI.Tests\bin\Debug\PatientDemographics.Logger.pdb

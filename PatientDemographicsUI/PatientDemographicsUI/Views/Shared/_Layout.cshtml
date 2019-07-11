@@ -9,7 +9,7 @@
 
     <script>
 
-        var PATIENT_API_URL = '@(System.Configuration.ConfigurationSettings.AppSettings["PatientDemographicsApiUrl"].ToString())';
+        var PATIENT_API_URL = '@(System.Configuration.ConfigurationManager.AppSettings["PatientDemographicsApiUrl"].ToString())';
 
     </script>
 
@@ -32,7 +32,7 @@
         @RenderBody()
 
         <footer>
-            <p style="background-color: #dddddd1c; font-weight: bold; color: blue; text-align: center; font-style: oblique">© @DateTime.Now.ToLocalTime()</p>
+            <p style="background-color: #fbfbfb; font-weight: bold; color: blue; text-align: center; font-style: oblique">© @DateTime.Now.ToLocalTime()</p>
         </footer>
     </div>
 

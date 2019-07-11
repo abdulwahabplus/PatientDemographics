@@ -9,19 +9,36 @@ namespace PatientDemographics.Logger
 {
     public class FileLogger : LogBase
     {
+        //File path has to be configured in web.config
         public string filePath = System.Configuration.ConfigurationSettings.AppSettings["LogFilePath"].ToString();
+        
+        /// <summary>
+        /// Log message to file
+        /// </summary>
+        /// <param name="message"></param>
         public override void Log(string message)
         {
-            lock (lockObj)
+            try
             {
-                if (!string.IsNullOrWhiteSpace(filePath))
+                lock (lockObj)
                 {
-                    using (StreamWriter streamWriter = new StreamWriter(filePath))
+                    if (!string.IsNullOrWhiteSpace(filePath))
                     {
-                        streamWriter.WriteLine(message);
-                        streamWriter.Close();
-                    } 
+                        string fullPath = System.AppDomain.CurrentDomain.BaseDirectory + filePath;
+                        if (File.Exists(fullPath))
+                        {
+                            using (StreamWriter streamWriter = new StreamWriter(fullPath))
+                            {
+                                streamWriter.WriteLine(message);
+                                streamWriter.Close();
+                            } 
+                        }
+                    }
                 }
+            }
+            catch
+            {
+
             }
         }
     }

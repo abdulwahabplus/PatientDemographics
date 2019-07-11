@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PatientDemographics.Logger;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -21,7 +22,11 @@ namespace PatientDemographicsAPI.Handlers
                 new  
                 {  
                     Message = errorMessage  
-                });  
+                });
+
+            //Logging exception
+            LogHelper.Log(errorMessage);
+
             response.Headers.Add("X-Error", errorMessage);  
             context.Result = new ResponseMessageResult(response);  
         }  

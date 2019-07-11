@@ -13,45 +13,53 @@ namespace PatientDemographicsAPI.Controllers
 {
     public class PatientController : ApiController
     {
-        private IPatientService patientService;
+        private IPatientService _patientService;
         public PatientController(IPatientService patientService)
         {
-            this.patientService = patientService;
+            this._patientService = patientService;
         }
-        // GET api/patients
+        
+        /// <summary>
+        /// To get all patients that saved in DB
+        /// </summary>
+        /// <returns name="List<PatientInfo>">List of patients</returns>
         [Route("api/patients")]
         [HttpGet]
         public HttpResponseMessage GetPatients()
         {
             try
             {
-                var patients = patientService.GetPatients();
-                if (patients != null && patients.Count() > 0)
+                var patients = _patientService.GetPatients();
+                if (patients != null && patients.Any())
                 {
                     return Request.CreateResponse(HttpStatusCode.OK, patients);
                 }
                 else
                 {
-                    return Request.CreateResponse(HttpStatusCode.NoContent, patients);
+                    return Request.CreateResponse(HttpStatusCode.NoContent);
                 }
             }
-            catch (Exception ex)
+            catch
             {
                 return Request.CreateResponse(HttpStatusCode.InternalServerError);
             }
         }
         
-        // POST api/patient
+        /// <summary>
+        /// To create a patient
+        /// </summary>
+        /// <param name="PatientInfo">Contains all basic informations of a patient</param>
+        /// <returns name="PatientInfo">Contains all basic informations of a patient with a valid ID (a number > 0)</returns>
         [Route("api/patient")]
         [HttpPost]
-        public HttpResponseMessage AddPatient([FromBody]PatientInfo input)
+        public HttpResponseMessage AddPatient(PatientInfo input)
         {
             try
             {
                 Validate<PatientInfo>(input);
                 if (ModelState.IsValid)
                 {
-                    var patient = patientService.CreatePatient(input);
+                    var patient = _patientService.CreatePatient(input);
                     if (patient != null && patient.ID > 0)
                     {
                         return Request.CreateResponse(HttpStatusCode.Created, patient);
@@ -66,7 +74,7 @@ namespace PatientDemographicsAPI.Controllers
                     return Request.CreateResponse(HttpStatusCode.BadRequest, ModelState);
                 }
             }
-            catch (Exception ex)
+            catch
             {
                 return Request.CreateResponse(HttpStatusCode.InternalServerError);
             }

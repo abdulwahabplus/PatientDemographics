@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace PatientDemographicsUI.Controllers
 {
-    public class HomeController : Controller
+    public class PatientController : Controller
     {
         public ActionResult Index()
         {

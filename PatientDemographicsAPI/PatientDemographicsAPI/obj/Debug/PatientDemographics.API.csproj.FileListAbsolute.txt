@@ -144,7 +144,6 @@ F:\Abdul\Connect\Git\PatientDemographics\PatientDemographicsAPI\PatientDemograph
 F:\Abdul\Connect\Git\PatientDemographics\PatientDemographicsAPI\PatientDemographicsAPI\bin\System.Web.WebPages.Razor.dll
 F:\Abdul\Connect\Git\PatientDemographics\PatientDemographicsAPI\PatientDemographicsAPI\bin\UnityConfiguration.dll
 F:\Abdul\Connect\Git\PatientDemographics\PatientDemographicsAPI\PatientDemographicsAPI\bin\WebGrease.dll
-F:\Abdul\Connect\Git\PatientDemographics\PatientDemographicsAPI\PatientDemographicsAPI\bin\Common.dll
 F:\Abdul\Connect\Git\PatientDemographics\PatientDemographicsAPI\PatientDemographicsAPI\bin\ORM.pdb
 F:\Abdul\Connect\Git\PatientDemographics\PatientDemographicsAPI\PatientDemographicsAPI\bin\PatientDemographics.Core.pdb
 F:\Abdul\Connect\Git\PatientDemographics\PatientDemographicsAPI\PatientDemographicsAPI\bin\PatientDemographics.Logger.pdb
@@ -169,7 +168,6 @@ F:\Abdul\Connect\Git\PatientDemographics\PatientDemographicsAPI\PatientDemograph
 F:\Abdul\Connect\Git\PatientDemographics\PatientDemographicsAPI\PatientDemographicsAPI\bin\System.Web.WebPages.Razor.xml
 F:\Abdul\Connect\Git\PatientDemographics\PatientDemographicsAPI\PatientDemographicsAPI\bin\UnityConfiguration.xml
 F:\Abdul\Connect\Git\PatientDemographics\PatientDemographicsAPI\PatientDemographicsAPI\bin\Antlr3.Runtime.pdb
-F:\Abdul\Connect\Git\PatientDemographics\PatientDemographicsAPI\PatientDemographicsAPI\bin\Common.pdb
 F:\Abdul\Connect\Git\PatientDemographics\PatientDemographicsAPI\PatientDemographicsAPI\obj\Debug\PatientDemographics.API.csprojResolveAssemblyReference.cache
 F:\Abdul\Connect\Git\PatientDemographics\PatientDemographicsAPI\PatientDemographicsAPI\obj\Debug\PatientDemographicsAPI.dll
 F:\Abdul\Connect\Git\PatientDemographics\PatientDemographicsAPI\PatientDemographicsAPI\obj\Debug\PatientDemographicsAPI.pdb

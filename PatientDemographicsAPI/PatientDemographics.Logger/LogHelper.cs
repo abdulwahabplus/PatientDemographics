@@ -8,11 +8,13 @@ namespace PatientDemographics.Logger
 {
     public static class LogHelper
     {
-        private static LogBase logger = null;
+        private static LogBase _logger = null;
+        
+        //this class should be used to log message
         public static void Log(string message)
         {
-            logger = new FileLogger();
-            logger.Log(message);
+            _logger = new FileLogger();
+            _logger.Log(message);
         }
     }
 }

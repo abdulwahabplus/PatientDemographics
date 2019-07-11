@@ -11,8 +11,8 @@ namespace Repositories
     public abstract class RepositoryBase<T> where T : class
     {
         #region Properties
-        private PatientDemographicEntities dataContext;
-        private readonly IDbSet<T> dbSet;
+        private PatientDemographicEntities _dataContext;
+        private readonly IDbSet<T> _dbSet;
 
         protected IDbFactory DbFactory
         {
@@ -22,25 +22,25 @@ namespace Repositories
 
         protected PatientDemographicEntities DbContext
         {
-            get { return dataContext ?? (dataContext = DbFactory.Init()); }
+            get { return _dataContext ?? (_dataContext = DbFactory.Init()); }
         }
         #endregion
 
         protected RepositoryBase(IDbFactory dbFactory)
         {
             DbFactory = dbFactory;
-            dbSet = DbContext.Set<T>();
+            _dbSet = DbContext.Set<T>();
         }
 
         #region Implementation
         public virtual T Add(T entity)
         {
-            return dbSet.Add(entity);
+            return _dbSet.Add(entity);
         }
 
         public virtual IEnumerable<T> GetAll()
         {
-            return dbSet.ToList();
+            return _dbSet.ToList();
         }
         #endregion
 

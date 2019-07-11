@@ -4,7 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Net;  
 using System.Net.Http;  
-using System.Web.Http.Filters; 
+using System.Web.Http.Filters;
+using PatientDemographics.Logger; 
 
 namespace PatientDemographicsAPI.Filters
 {
@@ -19,9 +20,12 @@ namespace PatientDemographicsAPI.Filters
             }  
             else  
             {  
-                exceptionMessage = actionExecutedContext.Exception.InnerException.Message;  
-            }  
-            //We can log this exception message to the file or database.  
+                exceptionMessage = actionExecutedContext.Exception.InnerException.Message;
+            }
+
+            //Logging exception
+            LogHelper.Log(exceptionMessage);
+ 
             var response = new HttpResponseMessage(HttpStatusCode.InternalServerError)  
             {  
                 Content = new StringContent("An unhandled exception was thrown by service."), 

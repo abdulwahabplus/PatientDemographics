@@ -1,58 +1,5 @@
 ﻿<br />
-<style>
-    #mydiv {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 1000;
-        background-color: grey;
-        opacity: .8;
-    }
 
-    .ajax-loader {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        margin-left: -32px; /* -1 * image width / 2 */
-        margin-top: -32px; /* -1 * image height / 2 */
-        display: block;
-    }
-
-    table {
-        font-family: arial, sans-serif;
-        border-collapse: collapse;
-        width: 100%;
-    }
-
-    td, th {
-        border: 1px solid #dddddd;
-        text-align: left;
-        padding: 8px;
-    }
-
-    tr:nth-child(even) {
-        background-color: #dddddd;
-    }
-
-    .button {
-        background-color: #4CAF50;
-        border: none;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        cursor: pointer;
-    }
-
-    .button4 {
-        border-radius: 9px;
-    }
-</style>
 <div data-ng-controller="patientController" class="container">
     <div class="row">
         <div class="col-md-12">
@@ -129,13 +76,13 @@
     <div class="row">
         <div class="col-md-12">
             <div class="table-responsive">
-                <table class="table table-bordered table-hover" style="width:800px">
+                <table class="table table-bordered table-hover">
                     <tr>
-                        <td style="background-color: #dddddd1c; color: blue">Forenames</td>
-                        <th style="background-color: #dddddd1c; color: blue">Surname</th>
-                        <th style="background-color: #dddddd1c; color: blue">Date of Birth</th>
-                        <th style="background-color: #dddddd1c; color: blue">Gender</th>
-                        <th style="background-color: #dddddd1c; color: blue">Telephone numbers</th>
+                        <td style="background-color: #fbfbfb; color: blue">Forenames</td>
+                        <th style="background-color: #fbfbfb; color: blue">Surname</th>
+                        <th style="background-color: #fbfbfb; color: blue">Date of Birth</th>
+                        <th style="background-color: #fbfbfb; color: blue">Gender</th>
+                        <th style="background-color: #fbfbfb; color: blue">Telephone numbers</th>
                     </tr>
                     <tr data-ng-repeat="patient in patients">
                         <td>
@@ -163,6 +110,6 @@
         </div>
     </div>
     <div id="mydiv" data-ng-show="loading">
-        <img src="Images/satyaloader.gif" class="ajax-loader" />
+        <img src="@Url.Content("~/Images/satyaloader.gif")" class="ajax-loader" />
     </div>
 </div>  

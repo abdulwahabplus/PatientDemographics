@@ -7,27 +7,32 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Common;
+using PatientDemographics.Core.Common;
+using PatientDemographics.Logger;
 
 namespace PatientDemographics.Core
 {
     public class PatientService : IPatientService
     {
-        private readonly IPatientRepository patientsRepository;
-        private readonly IUnitOfWork unitOfWork;
+        private readonly IPatientRepository _patientsRepository;
+        private readonly IUnitOfWork _unitOfWork;
 
         public PatientService(IPatientRepository patientsRepository, IUnitOfWork unitOfWork)
         {
-            this.patientsRepository = patientsRepository;
-            this.unitOfWork = unitOfWork;
+            this._patientsRepository = patientsRepository;
+            this._unitOfWork = unitOfWork;
         }
 
+        /// <summary>
+        /// Get list patients
+        /// </summary>
+        /// <returns></returns>
         public IEnumerable<PatientInfo> GetPatients()
         {
             var patientList = new List<PatientInfo>();
             try
             {
-                var patients = patientsRepository.GetAll();
+                var patients = _patientsRepository.GetAll();
                 if (patients != null)
                 {
                     foreach (Patient item in patients)
@@ -44,11 +49,17 @@ namespace PatientDemographics.Core
             }
             catch (Exception ex)
             {
-                //Log exception here
+                //Logging exception
+                LogHelper.Log(ex.Message);
             }
             return patientList;
         }
 
+        /// <summary>
+        /// Create a patient
+        /// </summary>
+        /// <param name="patient"></param>
+        /// <returns></returns>
         public PatientInfo CreatePatient(PatientInfo patient)
         {
             try
@@ -57,20 +68,21 @@ namespace PatientDemographics.Core
                 string xmlString = xml.CreateXML(patient);
                 Patient patientDataToSave = new Patient();
                 patientDataToSave.MetaData = xmlString;
-                var newData = patientsRepository.Add(patientDataToSave);
-                unitOfWork.Commit();
+                var newData = _patientsRepository.Add(patientDataToSave);
+                SavePatient();
                 patient.ID = newData.PatientID;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                //Log exception here
+                //Logging exception
+                LogHelper.Log(ex.Message);
             }
             return patient;
         }
  
         public void SavePatient()
         {
-            unitOfWork.Commit();
+            _unitOfWork.Commit();
         }
  
     }

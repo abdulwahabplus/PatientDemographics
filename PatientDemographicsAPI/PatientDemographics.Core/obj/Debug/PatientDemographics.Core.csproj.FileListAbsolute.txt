@@ -26,14 +26,14 @@ F:\Abdul\Connect\PatientDemographicsAPI\PatientDemographics.Core\obj\Debug\Patie
 F:\Abdul\Connect\PatientDemographicsAPI\PatientDemographics.Core\obj\Debug\PatientDemographics.Core.pdb
 F:\Abdul\Connect\Git\PatientDemographics\PatientDemographicsAPI\PatientDemographics.Core\bin\Debug\PatientDemographics.Core.dll
 F:\Abdul\Connect\Git\PatientDemographics\PatientDemographicsAPI\PatientDemographics.Core\bin\Debug\PatientDemographics.Core.pdb
-F:\Abdul\Connect\Git\PatientDemographics\PatientDemographicsAPI\PatientDemographics.Core\bin\Debug\Common.dll
 F:\Abdul\Connect\Git\PatientDemographics\PatientDemographicsAPI\PatientDemographics.Core\bin\Debug\ORM.dll
 F:\Abdul\Connect\Git\PatientDemographics\PatientDemographicsAPI\PatientDemographics.Core\bin\Debug\Repositories.dll
 F:\Abdul\Connect\Git\PatientDemographics\PatientDemographicsAPI\PatientDemographics.Core\bin\Debug\EntityFramework.dll
-F:\Abdul\Connect\Git\PatientDemographics\PatientDemographicsAPI\PatientDemographics.Core\bin\Debug\Common.pdb
 F:\Abdul\Connect\Git\PatientDemographics\PatientDemographicsAPI\PatientDemographics.Core\bin\Debug\ORM.pdb
 F:\Abdul\Connect\Git\PatientDemographics\PatientDemographicsAPI\PatientDemographics.Core\bin\Debug\Repositories.pdb
 F:\Abdul\Connect\Git\PatientDemographics\PatientDemographicsAPI\PatientDemographics.Core\bin\Debug\EntityFramework.xml
 F:\Abdul\Connect\Git\PatientDemographics\PatientDemographicsAPI\PatientDemographics.Core\obj\Debug\PatientDemographics.Core.csprojResolveAssemblyReference.cache
 F:\Abdul\Connect\Git\PatientDemographics\PatientDemographicsAPI\PatientDemographics.Core\obj\Debug\PatientDemographics.Core.dll
 F:\Abdul\Connect\Git\PatientDemographics\PatientDemographicsAPI\PatientDemographics.Core\obj\Debug\PatientDemographics.Core.pdb
+F:\Abdul\Connect\Git\PatientDemographics\PatientDemographicsAPI\PatientDemographics.Core\bin\Debug\PatientDemographics.Logger.dll
+F:\Abdul\Connect\Git\PatientDemographics\PatientDemographicsAPI\PatientDemographics.Core\bin\Debug\PatientDemographics.Logger.pdb

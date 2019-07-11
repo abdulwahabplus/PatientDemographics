@@ -1,6 +1,6 @@
 ﻿using Microsoft.Practices.Unity;
 using PatientDemographics.Core;
-using PatientDemographicsAPI.DependacyInjection;
+using PatientDemographicsAPI.DependencyInjection;
 using PatientDemographicsAPI.Filters;
 using PatientDemographicsAPI.Handlers;
 using Repositories;
@@ -34,12 +34,8 @@ namespace PatientDemographicsAPI
 
 
             //Dependency injection related configuration
-            var container = new UnityContainer();
-            container.RegisterType<IUnitOfWork, UnitOfWork>(new HierarchicalLifetimeManager());
-            container.RegisterType<IDbFactory, DbFactory>(new HierarchicalLifetimeManager());
-            container.RegisterType<IPatientRepository, PatientRepository>(new HierarchicalLifetimeManager());
-            container.RegisterType<IPatientService, PatientService>(new HierarchicalLifetimeManager());
-            config.DependencyResolver = new UnityResolver(container);
+            DependencyConfiguration dependencyConfiguration = new DependencyConfiguration();
+            dependencyConfiguration.Configure(config);
 
             //Registering filters globally to unhandled 
             config.Filters.Add(new CustomExceptionFilter());

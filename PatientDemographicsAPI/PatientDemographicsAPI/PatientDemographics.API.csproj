@@ -159,7 +159,8 @@
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\PatientController.cs" />
-    <Compile Include="DependacyInjection\UnityResolver.cs" />
+    <Compile Include="DependencyInjection\DependencyConfiguration.cs" />
+    <Compile Include="DependencyInjection\UnityResolver.cs" />
     <Compile Include="Filters\CustomExceptionFilter.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -168,6 +169,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ErrorLog\log.txt" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />

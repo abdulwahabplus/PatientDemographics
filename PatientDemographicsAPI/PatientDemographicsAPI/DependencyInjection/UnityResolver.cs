@@ -5,7 +5,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Http.Dependencies;
 
-namespace PatientDemographicsAPI.DependacyInjection
+namespace PatientDemographicsAPI.DependencyInjection
 {
     public class UnityResolver : IDependencyResolver
     {

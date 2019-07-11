@@ -47,6 +47,6 @@ F:\Abdul\Connect\Git\PatientDemographics\PatientDemographicsUI\PatientDemographi
 F:\Abdul\Connect\Git\PatientDemographics\PatientDemographicsUI\PatientDemographicsUI\bin\System.Web.WebPages.Razor.xml
 F:\Abdul\Connect\Git\PatientDemographics\PatientDemographicsUI\PatientDemographicsUI\bin\Newtonsoft.Json.xml
 F:\Abdul\Connect\Git\PatientDemographics\PatientDemographicsUI\PatientDemographicsUI\bin\Antlr3.Runtime.pdb
-F:\Abdul\Connect\Git\PatientDemographics\PatientDemographicsUI\PatientDemographicsUI\obj\Debug\PatientDemographicsUI.csprojResolveAssemblyReference.cache
 F:\Abdul\Connect\Git\PatientDemographics\PatientDemographicsUI\PatientDemographicsUI\obj\Debug\PatientDemographicsUI.dll
 F:\Abdul\Connect\Git\PatientDemographics\PatientDemographicsUI\PatientDemographicsUI\obj\Debug\PatientDemographicsUI.pdb
+F:\Abdul\Connect\Git\PatientDemographics\PatientDemographicsUI\PatientDemographicsUI\obj\Debug\PatientDemographicsUI.csprojResolveAssemblyReference.cache
