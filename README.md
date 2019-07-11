@@ -9,3 +9,6 @@ Projects
  -PatientDemographics.Tests - Unit Tests
  -PatientDemographicsUI - UI
  
+Steps to run the project
+ -Update the connection string PatientDemographics.API project's web.config
+ -Update the URL of PatientDemographics.API in PatientDemographicsUI project's web.config (key - PatientDemographicsApiUrl)
