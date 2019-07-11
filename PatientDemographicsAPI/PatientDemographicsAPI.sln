@@ -15,7 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatientDemographics.Core", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatientDemographics.Logger", "PatientDemographics.Logger\PatientDemographics.Logger.csproj", "{962A76BE-5311-4435-BD49-1C5D5B97C978}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatientDemographicsUI", "..\PatientDemographicsUI\PatientDemographicsUI\PatientDemographicsUI.csproj", "{6C86D86E-2ED5-43FF-8956-4F1C3D868273}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatientDemographicsUI", "PatientDemographicsUI\PatientDemographicsUI.csproj", "{6C86D86E-2ED5-43FF-8956-4F1C3D868273}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

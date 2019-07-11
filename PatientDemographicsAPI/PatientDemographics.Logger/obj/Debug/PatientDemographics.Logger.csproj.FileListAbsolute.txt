@@ -6,3 +6,4 @@ F:\Abdul\Connect\Git\PatientDemographics\PatientDemographicsAPI\PatientDemograph
 F:\Abdul\Connect\Git\PatientDemographics\PatientDemographicsAPI\PatientDemographics.Logger\bin\Debug\PatientDemographics.Logger.pdb
 F:\Abdul\Connect\Git\PatientDemographics\PatientDemographicsAPI\PatientDemographics.Logger\obj\Debug\PatientDemographics.Logger.dll
 F:\Abdul\Connect\Git\PatientDemographics\PatientDemographicsAPI\PatientDemographics.Logger\obj\Debug\PatientDemographics.Logger.pdb
+F:\Abdul\Connect\Git\PatientDemographics\PatientDemographicsAPI\PatientDemographics.Logger\obj\Debug\PatientDemographics.Logger.csprojResolveAssemblyReference.cache
