@@ -7,7 +7,7 @@ Projects
  * PatientDemographics.Models - ORM (EntityFramework)
  * PatientDemographics.Repositories - Repositories
  * PatientDemographics.Tests - Unit Tests
- * PatientDemographicsUI - UI
+ * PatientDemographicsUI - I have used Angularjs 1.7 in the UI part(refer Scripts/App/patientCntrl.js)
  
 Steps to run the project
  1. Update the connection string PatientDemographics.API project's web.config
